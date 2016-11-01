@@ -252,7 +252,7 @@ module.exports = function(files) {
       i++
       makeRawAudioFile(file, function(err, tmp) {
         if (err) {
-          return cb(err)
+          return cb();
         }
 
         function tempProcessed() {
